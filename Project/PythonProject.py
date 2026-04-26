@@ -158,7 +158,7 @@ plt.legend()
 plt.tight_layout()
 plt.show()
 
-# Print metrics for the regression
+# Print metrics for the regression 
 print(f"Objective 6 - Linear Regression R2 Score: {r2_score(y, y_pred):.4f}")
 
 # Objective 7: How do Tokens per Human Hour vary across different Regulatory Moats?
