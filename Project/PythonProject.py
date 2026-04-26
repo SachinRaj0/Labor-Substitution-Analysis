@@ -102,7 +102,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
-# Objective 2: How is the Estimated Substitution Year distributed across the roles?
+# Objective 2: How is the Estimated Substitution Year distributed across the roles? 
 plt.figure(figsize=(8, 5))
 sns.histplot(df['Substitution_Year_Est'], bins=10, kde=True, color='purple')
 plt.title("Q2: Distribution of Estimated Substitution Year")
