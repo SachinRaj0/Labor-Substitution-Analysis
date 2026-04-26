@@ -79,12 +79,12 @@ print(f"Shape Before: {shape_before}")
 print(f"Shape After:  {shape_after}") 
 
 # Handle outliers properly (Updating the working dataframe)
-df = df_clean.copy()
+df = df_clean.copy() 
 
 # Show boxplot (After)
 plt.figure(figsize=(8, 4))
 sns.boxplot(x=df[col], color='lightgreen')
-plt.title(f"Boxplot of {col} (After Outlier Removal)")
+plt.title(f"Boxplot of {col} (After Outlier Removal)")  
 plt.show()
 
 # =====================================================================
@@ -112,7 +112,7 @@ plt.tight_layout()
 plt.show()
 
 # Objective 3: What is the relationship between Human Labor Cost and Agent Labor Equivalent Cost?
-plt.figure(figsize=(8, 5))
+plt.figure(figsize=(8, 5)) 
 sns.scatterplot(x='Human_Labor_Cost_hr', y='Agent_Labor_Equivalent_Cost', data=df, color='orange')
 plt.title("Q3: Human Labor Cost vs. Agent Labor Equivalent Cost")
 plt.xlabel("Human Labor Cost per Hour")
