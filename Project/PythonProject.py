@@ -69,14 +69,14 @@ IQR = Q3 - Q1
 lower_bound = Q1 - 1.5 * IQR
 upper_bound = Q3 + 1.5 * IQR
 
-# Print before and after comparison
+# Print before and after comparison 
 shape_before = df.shape
 df_clean = df[(df[col] >= lower_bound) & (df[col] <= upper_bound)]
 shape_after = df_clean.shape
 
 print("\n--- Outlier Handling Comparison ---")
 print(f"Shape Before: {shape_before}")
-print(f"Shape After:  {shape_after}")
+print(f"Shape After:  {shape_after}") 
 
 # Handle outliers properly (Updating the working dataframe)
 df = df_clean.copy()
