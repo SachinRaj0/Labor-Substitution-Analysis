@@ -23,7 +23,7 @@ print(df.columns.tolist())
 print("\n--- Dataset Data Types ---")
 print(df.dtypes)
 
-# Check and handle missing values
+# Check and handle missing values 
 print("\n--- Missing Values (Before) ---")
 print(df.isnull().sum())
 df.dropna(inplace=True)
